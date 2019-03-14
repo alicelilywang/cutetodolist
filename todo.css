@@ -20,9 +20,26 @@
   left: 50%;
 }
 
+#date {
+    text-align: center;
+    color : pink;
+    font-size: 1.5rem;
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+ul {
+    list-style-image: url('https://resizeimage.net/mypic/oxHmemfhhqKLEXSb/IjcMP/icon_grid_1x_240ded28-7646-4a9.png');
+  }
+li {
+
+    font-family: 'Open Sans', sans-serif;
+}
 li:hover {
     color: pink;
     text-decoration: line-through;
+    font-family: 'Open Sans', sans-serif;
 }
 img {
     size: 50px;
@@ -32,6 +49,12 @@ img {
     animation-duration: 1s;
     animation-iteration-count: infinite;
 
+}
+
+::placeholder {
+    color: light-grey;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes rolypoly {
@@ -52,13 +75,9 @@ h2 {
 .title:hover {
 
    color:#ffcccc;
-   transform: scale(1.2);
+   transform: scale(1);
    transition-timing-function: ease-out;
    transition-duration: 2s;
 
 
 }
-
-
-
-
