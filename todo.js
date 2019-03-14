@@ -1,3 +1,4 @@
+
 function newItem() {
     var item = document.getElementById("input").value;
     var ul = document.getElementById("list");
@@ -33,3 +34,6 @@ function newItem() {
   function removeItem(e) {
     e.target.parentElement.removeChild(e.target);
   }
+  var today = new Date();
+  document.getElementById('time').innerHTML=today;
+  
