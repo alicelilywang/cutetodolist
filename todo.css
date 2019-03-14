@@ -1,20 +1,21 @@
+body {
+    padding-top: 70px;
+}
+
 .container {
     display: flex;
-    
     background-color: white;
     padding: 10em;
     height: 100%;
-
 }
+
 .box {
     text-align: center;
     flex: 1;
     height: 24rem;
 }
     
-.main {
-  
-  padding: 20px;
+.main {  
   margin: auto;
   top: 50%;
   left: 50%;
@@ -26,58 +27,63 @@
     font-size: 1.5rem;
 
     font-family: 'Open Sans', sans-serif;
-
 }
 
 ul {
-    list-style-image: url('https://resizeimage.net/mypic/nQ2eTcxBeA9cCGXe/enlrP/icon_grid_1x_240ded28-7646-4a9.png');
-  }
-li {
-
-    font-family: 'Open Sans', sans-serif;
+    list-style-image: url('file:///nfs/2018/a/aliwang/Desktop/icon_grid_1x_240ded28-7646-4a95-85a3-83327910899e.png');
 }
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
 li:hover {
     color: pink;
     text-decoration: line-through;
     font-family: 'Open Sans', sans-serif;
+    transform: scale(1.02);
 }
+
 img {
     size: 50px;
     justify-content: flex-end;
     padding: 50px;
-    animation-name: "rolypoly";
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: "rolypoly";
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
 
+#input {
+    padding: 5px;
+    width: 15rem;
 }
 
 ::placeholder {
     color: light-grey;
-
+    font-size: 0.8em;
     font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes rolypoly {
+@-webkit-keyframes rolypoly {
     0% {
-        transform: translateY(0em);
+        -webkit-transform: translateY(0em);
     }
     50% {
-        transform: translateY(-15px);
-    
+        -webkit-transform: translateY(-15px);
     }
 }
+
 h2 {
     font-size: 3rem;
     font-family: 'Open Sans', sans-serif;
     font-weight:light;
     letter-spacing: 1.5rem;
 }
-.title:hover {
 
+.title:hover {
    color:#ffcccc;
    transform: scale(1);
    transition-timing-function: ease-out;
    transition-duration: 2s;
-
-
 }
