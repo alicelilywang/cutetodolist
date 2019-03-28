@@ -115,6 +115,9 @@ h2 {
         left: 20%;
         position:relative;
     }
+    li {
+        margin-left: 20%;
+    }
     img {
         position:relative;
         padding: 20px;
