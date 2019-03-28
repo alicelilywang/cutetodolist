@@ -1,3 +1,4 @@
+
 body {
     padding-top: 8%;
     background-image: url("https://66.media.tumblr.com/8bef947cd00dbacee02efecdf86552d6/tumblr_inline_np5ac43MjQ1qb9lf3_540.jpg");
@@ -6,7 +7,7 @@ body {
 
 .container {
     display: flex;
-  
+    text-align: center;
     padding: 10em;
     height: 100%;
 
@@ -102,24 +103,43 @@ h2 {
    transition-duration: 2s;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
     .container {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
-    #date {
-        margin-right: 8%;
-        margin-left: 8%;
-        font-size: 16px;
-
+    .box {
+        padding: 10px;
+}
+    h2 {
+        left: 20%;
+        position:relative;
     }
     img {
+        position:relative;
         padding: 20px;
         max-width: 100%;
+        
     }
     .container {
         text-align: center;
-    padding: 5em;
+        padding: 5em;
+        
+    }
+    #input {
+        position:relative;
+        text-align:center;
+        margin-left: 20%;
+    }
+    #date {
+        
+    }
+
+  }
+
+  @media screen and (max-width: 700px){
+    #date {
+        display:none;
     }
 
   }
