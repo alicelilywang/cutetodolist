@@ -1,0 +1,125 @@
+body {
+    padding-top: 8%;
+    background-image: url("https://66.media.tumblr.com/8bef947cd00dbacee02efecdf86552d6/tumblr_inline_np5ac43MjQ1qb9lf3_540.jpg");
+    text-align: center;
+}
+
+.container {
+    display: flex;
+  
+    padding: 10em;
+    height: 100%;
+
+    
+}
+
+.box {
+    text-align: center;
+   flex:1;
+    margin-right: 20%;
+   
+}
+
+#date {
+    margin-left: 35%;
+    margin-right: 35%;
+
+    text-align: center;
+    color : pink;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+    list-style-image: url('https://i.imgur.com/Uzo0sOn.png');
+    text-decoration:none;
+    background: transparent;
+    
+}
+
+li {
+    background:transparent;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  
+    background:transparent;
+}
+ 
+li:hover {
+    color: pink;
+    text-decoration: line-through;
+    
+
+    transform: scale(1.02);
+}
+
+img {
+    flex: 1;
+    background: transparent;
+    justify-content: flex-end;
+    padding: 50px;
+    -webkit-animation-name: "rolypoly";
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 15rem;
+    
+}
+
+::placeholder {
+    color: light-grey;
+    font-size: 0.8em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@-webkit-keyframes rolypoly {
+    0% {
+        -webkit-transform: translateY(0em);
+    }
+    50% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:light;
+    letter-spacing: 7px;
+}
+
+.title:hover {
+   color:#ffcccc;
+   transform: scale(1);
+   transition-timing-function: ease-out;
+   transition-duration: 2s;
+}
+
+@media screen and (max-width: 700px){
+    .container {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    #date {
+        margin-right: 8%;
+        margin-left: 8%;
+        font-size: 16px;
+
+    }
+    img {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .container {
+        text-align: center;
+    padding: 5em;
+    }
+
+  }
